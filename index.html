@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keyword" content="Game Dice Player" />
+    <meta
+      name="description"
+      content="Le jeu de Dice Game je joue à 2 joueurs et le premier arrivé à 100 a gagné."
+    />
+    <title>Dice Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <script
+      src="https://kit.fontawesome.com/2e9612c197.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="wrapper">
+      <button class="new_game" id="new_game">
+        <i class="fa-solid fa-plus"></i>
+        NEW GAME
+      </button>
+
+      <canvas id="value_dice">Value Dice</canvas>>
+
+      <button id="button_roll">
+        <i class="fa-solid fa-dice"></i>
+        ROLL DICE
+      </button>
+
+      <button id="hold">
+        <i class="fa-solid fa-lock"></i>
+        HOLD
+      </button>
+
+      <div class="player1_background actif">
+        <div class="content">
+          <h2>PLAYER 1</h2>
+          <div class="pastille"></div>
+        </div>
+        <div class="global_value">0</div>
+        <div class="round_player">
+          <h4>CURRENT</h4>
+          <div class="round_value">0</div>
+        </div>
+      </div>
+
+      <div class="player2_background inactif">
+        <div class="content">
+          <h2>PLAYER 2</h2>
+          <div class="pastille"></div>
+        </div>
+        <div class="global_value">0</div>
+        <div class="round_player">
+          <h4>CURRENT</h4>
+          <p class="round_value">0</p>
+        </div>
+      </div>
+    </div>
+    <div class="win containeur hide">
+      <p class="victoire"></p>
+      <button class="new_game" id="new_game2">
+        <i class="fa-solid fa-plus"></i>
+        NEW GAME
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
